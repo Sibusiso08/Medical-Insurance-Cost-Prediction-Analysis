@@ -62,7 +62,7 @@ healthcare-insurance-claims-analysis/
 │   └── medical_insurance_cleaned.csv      # Cleaned dataset (100K rows)
 │
 ├── sql/
-│   └── healthcare_queries.sql                # MySQL queries used in analysis
+│   └── medical_insurance_queries.sql                # MySQL queries used in analysis
 │
 ├── notebooks/
 │   └── healthcare_risk_prediction.ipynb      # Full ML notebook with explanations
