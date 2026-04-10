@@ -14,9 +14,9 @@
 
 This end-to-end data analytics project analyses a **100,000-patient healthcare insurance claims dataset** to uncover cost drivers, risk patterns, and demographic insights relevant to a health insurance business.
 
-The project covers the full analytics pipeline - from raw data cleaning in Excel, structured querying in MySQL, interactive dashboards in Tableau, through to a **machine learning model** that predicts whether a patient is likely to be classified as high risk.
+The project covers the full analytics pipeline — from raw data cleaning in Excel, structured querying in MySQL, interactive dashboards in Tableau, through to a **machine learning model** that predicts whether a patient is likely to be classified as high risk.
 
-This kind of analysis supports real business decisions around underwriting, premium pricing, care management programme targeting and claims cost reduction.
+This kind of analysis supports real business decisions around underwriting, premium pricing, care management programme targeting, and claims cost reduction.
 
 ---
 
@@ -46,7 +46,7 @@ This kind of analysis supports real business decisions around underwriting, prem
 
 ## Dataset
 
-- **Source:** Kaggle - Medical Insurance Cost Prediction Dataset
+- **Source:** Kaggle — Healthcare Insurance Claims Dataset
 - **Size:** 100,000 patients · 55 columns
 - **Key fields:** Age, sex, region, BMI, smoker status, 10 chronic condition flags, plan type, network tier, annual medical cost, total claims paid, risk score, `is_high_risk`
 - **Missing values:** 0 — fully clean dataset
@@ -59,7 +59,7 @@ This kind of analysis supports real business decisions around underwriting, prem
 healthcare-insurance-claims-analysis/
 │
 ├── data/
-│   └── medical_insurance_cleaned.xlsx        # Cleaned dataset (100K rows)
+│   └── medical_insurance_cleaned.csv      # Cleaned dataset (100K rows)
 │
 ├── sql/
 │   └── healthcare_queries.sql                # MySQL queries used in analysis
@@ -100,8 +100,7 @@ High-level KPIs and summary metrics for a leadership audience.
 
 **Visuals:** Risk tier donut (Low / Medium / High), regional patient distribution, medical cost by age group
 
-![Executive Overview](<img width="1919" height="1075" alt="Executive Overview" src="https://github.com/user-attachments/assets/f00733d5-0864-417c-b7d4-f9f82bb3d7a2" />
-)
+![Executive Overview](images/dashboard_executive_overview.png)
 
 ---
 
@@ -110,8 +109,7 @@ Demographic and risk pattern analysis across the patient population.
 
 **Visuals:** Avg cost by BMI category, gender distribution, claims by income group, avg risk score by education level, patient count by employment status
 
-![Demographics & Risk](<img width="1919" height="1079" alt="Patients Demographics   Risk" src="https://github.com/user-attachments/assets/0ee6dcba-622f-432e-b80d-ef6c3544f1e6" />
-)
+![Demographics & Risk](images/dashboard_demographics_risk.png)
 
 ---
 
@@ -120,8 +118,7 @@ Detailed cost driver and claims behaviour analysis.
 
 **Visuals:** Smoker cost comparison (Current / Former / Never), premium by plan type, claims by network tier, major procedure cost impact, claims by employment status
 
-![Claims & Costs](<img width="1919" height="1079" alt="Claims   Cost Analysis" src="https://github.com/user-attachments/assets/38dd533f-5740-400d-8a36-746a3d3f3b76" />
-)
+![Claims & Costs](images/dashboard_claims_costs.png)
 
 ---
 
@@ -207,13 +204,13 @@ Patients over 65 average $3,745 in annual medical costs — 62% more than patien
 Patients with multiple chronic conditions drive a disproportionate share of claims. Early chronic disease management programmes would deliver measurable cost savings at scale.
 
 **3. Smoking status significantly elevates cost (importance: 0.08)**
-Current smokers average $4,296 in annual medical costs vs $2,746 for never-smokers — a 56% difference. Wellness incentives targeting smoking cessation have a clear and quantifiable ROI.
+Current smokers average $4,296 in annual medical costs vs $2,746 for never-smokers - a 56% difference. Wellness incentives targeting smoking cessation have a clear and quantifiable ROI.
 
 **4. Middle income group accounts for the highest total claims ($58.8M)**
 This is volume-driven rather than cost-driven. Per-claim costs are broadly consistent across income groups, suggesting income itself is not a strong individual cost driver.
 
 **5. Plan type has negligible impact on monthly premium**
-PPO, POS, HMO, and EPO plans all average approximately $48.44–$48.60 per month — a near-identical spread that warrants a strategic review of plan type differentiation.
+PPO, POS, HMO, and EPO plans all average approximately $48.44–$48.60 per month - a near-identical spread that warrants a strategic review of plan type differentiation.
 
 ---
 
@@ -241,12 +238,12 @@ jupyter notebook notebooks/healthcare_risk_prediction.ipynb
 
 ## Author
 
-**Deven Mbuyane**
-Data & Insights Analyst | Pretoria, South Africa
+**Sibusiso Deven Mbuyane**
+Data & Insights Analyst | South Africa
 
 [![GitHub](https://img.shields.io/badge/GitHub-Sibusiso08-181717?style=flat&logo=github)](https://github.com/Sibusiso08)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-7B5EA7?style=flat)](https://sibusiso08.github.io/DevenMbuyane.github.io)
 
 ---
 
-*Dataset source: Kaggle — Healthcare Insurance Claims Dataset*
+*Dataset source: Kaggle - Medical Insurance Cost Prediction Dataset*
