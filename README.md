@@ -14,7 +14,7 @@
 
 This end-to-end data analytics project analyses a **100,000-patient healthcare insurance claims dataset** to uncover cost drivers, risk patterns, and demographic insights relevant to a health insurance business.
 
-The project covers the full analytics pipeline — from raw data cleaning in Excel, structured querying in MySQL, interactive dashboards in Tableau, through to a **machine learning model** that predicts whether a patient is likely to be classified as high risk.
+The project covers the full analytics pipeline - from raw data cleaning in Excel, structured querying in MySQL, interactive dashboards in Tableau, through to a **machine learning model** that predicts whether a patient is likely to be classified as high risk.
 
 This kind of analysis supports real business decisions around underwriting, premium pricing, care management programme targeting, and claims cost reduction.
 
