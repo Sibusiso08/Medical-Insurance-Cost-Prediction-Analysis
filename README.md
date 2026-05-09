@@ -254,4 +254,4 @@ Data & Insights Analyst | South Africa
 
 ---
 
-*Dataset source: Kaggle - [Medical Insurance Cost Prediction Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/medical-insurance-cost-prediction/discussion/615310)*
+*Dataset source: Kaggle - [Medical Insurance Cost Prediction Dataset](https://www.kaggle.com/datasets/mohankrishnathalla/medical-insurance-cost-prediction/data)*
