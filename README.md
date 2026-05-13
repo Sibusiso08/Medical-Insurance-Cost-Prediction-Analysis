@@ -38,8 +38,8 @@ This kind of analysis supports real business decisions around underwriting, prem
 | **Excel** | Data cleaning, validation, pivot exploration |
 | **MySQL** | Structured querying and aggregation analysis |
 | **Tableau** | Interactive dashboards and visual storytelling |
-| **Python — Pandas, Matplotlib, Seaborn** | EDA and visualisation |
-| **Python — Scikit-learn** | Random Forest classification model |
+| **Python - Pandas, Matplotlib, Seaborn** | EDA and visualisation |
+| **Python - Scikit-learn** | Random Forest classification model |
 | **Jupyter Notebook** | ML development and documentation |
 
 ---
@@ -50,6 +50,7 @@ This kind of analysis supports real business decisions around underwriting, prem
 - **Size:** 100,000 patients · 55 columns
 - **Key fields:** Age, sex, region, BMI, smoker status, 10 chronic condition flags, plan type, network tier, annual medical cost, total claims paid, risk score, `is_high_risk`
 - **Missing values:** 0 - fully clean dataset
+- **Important:** This dataset is synthetically generated (Kaggle). The `is_high_risk` target label was mathematically derived from patient features - not collected from real patients. This is a known limitation flagged by multiple practitioners in the Kaggle community and explains the near-perfect model accuracy.
 
 ---
 
@@ -68,7 +69,7 @@ Medical-Insurance-Cost-Prediction-Analysis/
 │   └── healthcare_risk_prediction.ipynb      # Full ML notebook with explanations
 │
 ├── tableau/
-│   └── medical_insurance_tableau.twb         # Tableau workbook — 3 dashboards
+│   └── medical_insurance_tableau.twb         # Tableau workbook - 3 dashboards
 │
 ├── images/
 │   ├── dashboard_executive_overview.png
@@ -145,7 +146,7 @@ Three columns were excluded from model features to prevent the model from using 
 |--------|----------------|
 | `risk_score` | Directly used to derive `is_high_risk` |
 | `risk_category` | Directly derived from `is_high_risk` |
-| `person_id` | Identifier only — no predictive value |
+| `person_id` | Identifier only - no predictive value |
 
 ### Train / Test Split
 
@@ -164,11 +165,11 @@ Stratified splitting was used to preserve the Yes/No ratio in both sets.
 |--------|-------|
 | **Accuracy** | **99.58%** |
 | **ROC-AUC** | **0.9999** |
-| Precision — High Risk | 1.00 |
-| Recall — High Risk | 0.99 |
-| F1 Score — High Risk | 0.99 |
+| Precision - High Risk | 1.00 |
+| Recall - High Risk | 0.99 |
+| F1 Score - High Risk | 0.99 |
 
-> **Note on high accuracy:** The dataset is synthetically generated, meaning features have clean, consistent relationships with the target variable. In a real-world production environment, accuracy of 85–90% would be more typical. The feature importance rankings remain clinically valid and business-relevant regardless.
+> **Note on high accuracy:** This dataset is synthetically generated - the target label was mathematically computed from the features using a deterministic formula. Multiple Kaggle practitioners have flagged this, noting the dataset produces misleadingly perfect results for any classification model. In real-world healthcare data, 85-92% accuracy would be a more realistic benchmark. The feature importance rankings remain clinically valid regardless.
 
 ---
 
@@ -218,7 +219,7 @@ Current smokers average $4,296 in annual medical costs vs $2,746 for never-smoke
 This is volume-driven rather than cost-driven. Per-claim costs are broadly consistent across income groups, suggesting income itself is not a strong individual cost driver.
 
 **5. Plan type has negligible impact on monthly premium**
-PPO, POS, HMO, and EPO plans all average approximately $48.44–$48.60 per month - a near-identical spread that warrants a strategic review of plan type differentiation.
+PPO, POS, HMO, and EPO plans all average approximately $48.44-$48.60 per month - a near-identical spread that warrants a strategic review of plan type differentiation.
 
 ---
 
