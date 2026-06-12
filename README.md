@@ -227,7 +227,7 @@ PPO, POS, HMO, and EPO plans all average approximately $48.44-$48.60 per month -
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/Sibusiso08/Medical-Insurance-Cost-Prediction-Analysis.git
+git clone https://github.com/Deven-analyst/Medical-Insurance-Cost-Prediction-Analysis.git
 cd Medical-Insurance-Cost-Prediction-Analysis
 ```
 
@@ -250,7 +250,7 @@ jupyter notebook notebooks/healthcare_risk_prediction.ipynb
 **Sibusiso Deven Mbuyane**
 Data & Insights Analyst | South Africa
 
-[![GitHub](https://img.shields.io/badge/GitHub-Sibusiso08-181717?style=flat&logo=github)](https://github.com/Sibusiso08)
+[![GitHub](https://img.shields.io/badge/GitHub-Deven-analyst-181717?style=flat&logo=github)](https://github.com/Deven-analyst)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-7B5EA7?style=flat)](https://sibusiso08.github.io/DevenMbuyane.github.io)
 
 ---
